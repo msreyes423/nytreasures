@@ -1,0 +1,9 @@
+.jumbotron {
+    border: solid;
+	background-image: url("../images/taxi.jpeg");
+	background-size: cover;
+}
+
+.card-img-top {
+    height: 40%;
+}
