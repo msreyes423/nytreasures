@@ -1,108 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+      
+      <!--FONT AWESOME-->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+      
+      <!--PLUG IN-->
+      <link rel="stylesheet" href="css/focuspoint.css">
     
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <!--MY CSS-->
-    <link rel="stylesheet" href="style.css">
-    
-    <title>NY Treasures</title>
-</head>
-<body class="bg-dark">
-    <!--NAV-->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-     <div class="container">
-      <a class="navbar-brand" href="index.html">New York Treasures</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavBar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div id="mainNavBar" class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-              <li class="nav-item"><a href="html/#" class="nav-link">About</a></li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">Explore</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="html/hidden_ny.html">Hidden NY</a>
-                  <a class="dropdown-item" href="html/freeny.html">Free NY</a>
-                  <a class="dropdown-item" href="html/shopping_ny.html">Shopping</a>
-                </div>
-                </li>
-            </ul>
+      <!--MY CSS-->
+      <link rel="stylesheet" href="css/style.css">
+      
+      <title>NY Treasures</title>
+  </head>
+  <body class="bg-dark">
+      <!--NAV-->
+      <nav class="navbar navbar-expand-md navbar-light">
+       <div class="container">
+        <a class="navbar-brand" href="index.html">New York Treasures</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavBar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="mainNavBar" class="collapse navbar-collapse">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">Explore</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="html/hidden_ny.html">Hidden NY</a>
+                    <a class="dropdown-item" href="html/free_ny.html">Free Activities</a>
+                    <a class="dropdown-item" href="html/shopping_ny.html">Shopping</a>
+                  </div>
+                  </li>
+              </ul>
+          </div>
+          </div>
+      </nav><!--END OF NAV-->
+      
+      <!--PAGE CONTENT-->
+      <div class="container">
+      
+        <!-- JUMBOTRON-->
+        <!--<div class="jumbotron border-warning my-4">
+          <h1 class="display-3">Welcome!</h1>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <a href="#" class="btn btn-warning btn">Learn more!</a>
+        </div>-->
+        
+        <!--FOCUSPOINT-->
+        <div class="focuspoint my-4 rounded border border-warning"
+          data-focus-x="0.52" 
+          data-focus-y="-0.53" 
+          data-image-w="1280" 
+          data-image-h="853">
+          <img src="images/taxi-skyline-1920x1280.jpg" alt="NYC Skyline">
+          <div class="overlay">
+          <h1 class="display-3 ml-3 mt-5">Welcome!</h1>
+          <p class="ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <a href="#" class="btn btn-warning btn ml-3">Learn more!</a>
+          </div>
         </div>
-        </div>
-    </nav><!--END OF NAV-->
-    
-    <!--PAGE CONTENT-->
-    <div class="container">
-    
-    <!-- JUMBOTRON-->
-      <header class="jumbotron border-warning my-4">
-        <h1 class="display-3">Welcome!</h1>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <a href="#" class="btn btn-warning btn">Learn more!</a>
-      </header>
       
         <!--CARDS-->
+        <!--<div class="row text-center">
+          <div class="col-md-4 my-4">
+            <div class="card h-100 border-warning">
+              <img class="card-img-top" src="images/city-cars-vehicles-street.jpg" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Hidden NY</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+              <div class="card-footer">
+                <a href="html/hidden_ny.html" class="btn btn-sm btn-outline-warning">Discover</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 my-4">
+            <div class="card h-100 border-warning">
+              <img class="card-img-top" src="images/statue-of-liberty.jpg" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Free NY</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+              <div class="card-footer">
+                <a href="html/free_ny.html" class="btn btn-sm btn-outline-warning">Save</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 my-4">
+            <div class="card h-100 border-warning">
+              <img class="card-img-top" src="images/macys-new-york.jpg" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Shopping</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+              <div class="card-footer">
+                <a href="html/shopping_ny.html" class="btn btn-sm btn-outline-warning">Explore</a>
+              </div>
+            </div>
+          </div>
+        </div><!--end of cards-->
+        
+          <!--ALT CARDS-->
         <div class="row text-center">
-    
-          <div class="col-md-4 mb-4">
-          <div class="card h-100 border-warning">
-            <img class="card-img-top" src="images/city-cars-vehicles-street.jpg" alt="City Street">
-            <div class="card-body">
-              <h4 class="card-title">Hidden NY</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="col-md-4 my-4">
+            <div class="card">
+              <div class="card-image border-warning border">
+                <a href="#"><img class="img img-raised" src="images/city-cars-vehicles-street.jpg"></a>
+              </div>
+              <div class="table">
+                <h6><i class="fas fa-binoculars"></i></h6>
+                <h4 class="card-caption">
+  							  <a href="html/hidden_ny.html">Discover</a>
+  							</h4>
+                <p class="card-description">Hidden NY...Lorem ipsum dolor sit amet, consectetur adipis cingelit. Etiam lacinia elit et placerat finibus.</p>
+              </div>
             </div>
-            <div class="card-footer">
-              <a href="html/hidden_ny.html" class="btn btn-outline-warning">Learn More!</a>
-            </div>
-          </div>
-        </div><!--end of card-->
+          </div><!--end of card-->
           
-          <div class="col-md-4 mb-4">
-          <div class="card h-100 border-warning">
-            <img class="card-img-top" src="images/statue-of-liberty.jpg" alt="Statue of Liberty">
-            <div class="card-body">
-              <h4 class="card-title">Free NY</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="col-md-4 my-4">
+            <div class="card">
+              <div class="card-image">
+                <a href="#"><img class="img img-raised" src="images/statue-of-liberty.jpg"></a>
+              </div>
+              <div class="table">
+                <h6><i class="fas fa-piggy-bank"></i></h6>
+                <h4 class="card-caption">
+  							  <a href="html/free_ny.html">Save</a>
+  							</h4>
+                <p class="card-description">Free NY...Lorem ipsum dolor sit amet, consectetur adipis cingelit. Etiam lacinia elit et placerat finibus.</p>
+              </div>
             </div>
-            <div class="card-footer">
-              <a href="html/freeNY.html" class="btn btn-outline-warning">Learn More!</a>
+          </div><!--end of card-->
+          
+          <div class="col-md-4 my-4">
+            <div class="card">
+              <div class="card-image">
+                <a href="#"><img class="img img-raised" src="images/macys-new-york.jpg"></a>
+              </div>
+              <div class="table">
+                <h6><i class="fas fa-shopping-cart"></i></h6>
+                <h4 class="card-caption">
+  							  <a href="html/shopping_ny.html">Shop</a>
+  							</h4>
+                <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipis cingelit. Etiam lacinia elit et placerat finibus.</p>
+              </div>
             </div>
-          </div>
-        </div><!--end of card-->
-        
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 border-warning">
-            <img class="card-img-top" src="images/macys-new-york.jpg" alt="Macys">
-            <div class="card-body">
-              <h4 class="card-title">Shopping</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-            <div class="card-footer">
-              <a href="html/shopping_ny.html" class="btn btn-outline-warning">Learn More!</a>
-            </div>
-          </div>
-        </div><!--end of card-->
-        
+          </div><!--end of card-->
+          
         </div><!--end of row-->
-        
-        
-    </div><!--END OF CONTAINER-->
-     
-    
-    
-    
-    <!-- jQuery/Popper.js/Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-     <!--MY SCRIPT-->
+      </div><!--END OF CONTAINER-->
+       
+      
+      
+      
+      <!-- jQuery/Popper.js/Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+       <!--MY SCRIPTS-->
+      <script src="js/jquery.focuspoint.min.js"></script>
+        <script type="text/javascript">
+		  //<![CDATA[	
+			
+			(function($) {
+				$(document).ready(function() {
+					
+					//Activate focus points
+					$('.focuspoint').focusPoint();
+					
+				});
+			  }(jQuery));
+		
+		//]]>
+		</script>
     <script src="js/myScript.js"></script>
-</body>
+  </body>
 </html>
